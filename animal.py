@@ -939,6 +939,7 @@ for fortune in fortune_pig:
     month_text = fortune.select_one('#yearFortune > div > div.detail > p:nth-child(6)').text
 
     if name is not None:
+        #띠별 운세
         print(name)
         print('오늘의 운세 : ' + today_text)
         print(first_year + ' : ' + first_text)
