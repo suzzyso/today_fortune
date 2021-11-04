@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>menu</title>
+    <script src="https://kit.fontawesome.com/2f61ce9ce6.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;1,600&display=swap" rel="stylesheet">
+</head>
+<style>
+    *{
+        font-family: 'Source Sans Pro', sans-serif;
+        font-weight: bolder;
+    }
+    .navbar{
+        display:flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: white;
+        padding: 5px 10px;
+    }
+    body {
+        margin: 0;
+    }
+    a {
+        text-decoration: none;
+        color: black;
+    }
+    .navbar-logo{
+        font-size: 26px;
+        color: lightslategray;
+    }
+    .navbar_menu {
+        display: flex;
+        list-style: none;
+        padding-left: 0;
+        font-size: 20px;
+    }
+    .navbar_menu li{
+        padding: 8px 12px;
+    }
+    .navbar_menu li:hover {
+        background-color: lightslategray;
+        border-radius: 5px;
+    }
+    .blank{
+        margin-left: px;
+        color: blue;
+    }
+</style>
+<body>
+     <nav class="navbar">
+         <img src="../static/logo/logo.png"
+         style="margin-left: 745px"
+              width="200"
+              height="110">
+        <div class="navbar-logo">
+            <a class="blank"> </a>
+        </div>
+
+         <ul class="navbar_menu">
+             <li><a href="#" onclick="location.href='index.html'">HOME</a></li>
+             <li><a href="#" onclick="location.href='aboutus.html'">ABOUT US</a></li>
+         </ul>
+
+     </nav>
+</body>
+</html>
