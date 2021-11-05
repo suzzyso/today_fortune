@@ -15,27 +15,81 @@
     <style>
 
         @font-face {
-        font-family: 'Cafe24Ssurround';
-        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24Ssurround.woff') format('woff');
-
+            font-family: 'CookieRunOTF-Bold';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/CookieRunOTF-Bold00.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
         }
-
-        .mytitle {
-            color: lavenderblush;
+        * {
+            font-family: 'CookieRunOTF-Bold';
+            font-weight: normal;
+            font-style: normal;
+            margin: 0;
+            padding: 0;
+        }
+        ul{list-style: none;}
+        a{text-decoration: none;}
+        /*body {
+            background-image: url("../main_fortune_file/image/background-image.jpeg");
+            background-color: rgba( 255, 255, 255, 80 );
+        {#background-color: ivory;#}
+        background-position: 600px 300px;
+        background-repeat: no-repeat;
+        }*/
+        body{
+            width: 1200px;
+            height: 800px;
+            background: #fff;
+            margin: 0 auto;
+        }
+        /* header */
+        #header{
+            width: 100%; height: 130px;
+            background: #fff;
+            position: relative;
+            overflow: hidden;
             text-align: center;
-            margin-top: 100px;
-            margin-bottom: 3px;
         }
-
-        .mytitle>h1 {
-            font-size: 80px;
-
-            margin-bottom: 10px;
+        #logo{
+            width: 180px; height: 100px;
+            margin: 0 auto;
+            position: relative;
+            overflow: hidden;
+            text-align: center;
         }
-        .mytitle>h2 {
+        #logo>a>img{
+            width: 160px; height: 90px;
+            padding-top: 10px;
+        }
+        #header>ul>li{
+            float: right;
+            position: relative;
+            margin-left: 40px;
             font-size: 20px;
         }
-        .mytitle>a{
+        #header>ul>li>a{
+            display: block;
+            padding-left: 20px;
+            padding-right: 20px;
+            color: #000;
+        }
+
+        /*section*/
+        .wrap{
+            background: #fff url("../static/main_fortune_file/image/background-image.jpeg")no-repeat;
+            background-size: 100% 800px;
+            opacity: 80%;
+            width: 1200px; height: 800px;
+        }
+        .mytitle {
+            text-align: center;
+        }
+        .mytitle>h1{
+            padding-top: 60px;
+            padding-bottom: 10px;
+        }
+
+        /*.mytitle>a{
             font-size: 50px;
             border-radius: 20px;
             padding-top: 5px;
@@ -45,133 +99,113 @@
             background-color: #30799B;
             background-color: rgba( 255, 255, 255, 0.18 );
 
-        }
+        }*/
 
-        body {
-            background-image: url("../static/image/background-image.jpeg");
-            background-size: 2150px;
-            background-color: rgba( 255, 255, 255, 80 );
-            {#background-color: ivory;#}
-            background-position: 600px 300px;
-            background-repeat: no-repeat;
-        }
-            {#font-family: 'Yeon Sung', cursive;#}
-        * {
-
-             font-family: 'Cafe24Ssurround';
-             font-weight: normal;
-             font-style: normal;
-        }
-
-        .rtans>a {
+        .rtans>div {
             display: block;
-            width: 350px;
-            height: 550px;
+            width: 250px;
+            height: 450px;
             border: solid 5px #30799B;
             background-color: white;
+            opacity: 90%;
             border-radius: 60px;
             box-shadow: 0px 0px 10px 0px #30799B;
-            margin: 65px;
+            margin: 20px;
             background-size: cover;
             background-position: center;
             color: black;
             text-align: center;
-            font-size: 50px;
-
-            {#line-height: 470px;#}
-            text-decoration-line: none;
+            font-size: 40px;
+            float: left;
         }
 
-        .rtan1 {
-            background-image: url();
-
+        .rtan1>p,
+        .rtan2>p,
+        .rtan3>p,
+        .rtan4>p{
+            margin-top: 130px;
         }
 
-        .rtan2 {
-            background-image: url();
-            text-decoration-line: none;
+        .rtan1>div,
+        .rtan2>div,
+        .rtan3>div,
+        .rtan4>div{
+            font-size: 25px;
+            margin-top: 40px;
+            margin-bottom: 50px;
         }
-         .rtan3 {
-            text-decoration-line: none;
-        }
-          .rtan4 {
-
-            text-decoration-line: none;
-        }
-
-
-
-        .rtans {
+        /*.rtans {
             display: flex;
             white-space: nowrap;
             flex-direction: row;
             justify-content: center;
-            {#flex-wrap: wrap;#}
-            /* 이미지 사이즈 유지 */
-            width: 1200px;
-            margin: auto;
-            vertical-align: middle;
-            opacity: 0.85;
+        {#flex-wrap: wrap;#}
+        /* 이미지 사이즈 유지 */
+        /*width: 1200px;
+        margin: auto;
+        vertical-align: middle;
+        opacity: 0.85;*/
 
-        }
 
-        .rtans>a:hover {
-            {#background-color: darkred;#}
-        }
-        .fortune{
-            font-size: 100px;
+        /*.rtans>a:hover {
+        {#background-color: darkred;#}
+        }*/
 
-        }
-        .nickname{
-            font-size: 25px;
-        }
-        .start{
-            font-size: 30px;
-        }
     </style>
 </head>
 
 <body>
 
-    <div class="mytitle">
-        <h1><img src="../static/text icon/today_fortune_icon.png"></h1>
-        <h2><img src="../static/text icon/which_one_icon.png" height="60"></h2>
+    <header id="header">
+        <div id="logo"><a href="#"><img src="../static/main_fortune_file/logo/logo.png" alt="logo"></a></div>
+        <ul class="navbar_menu">
+            <li><a href="/special">ABOUT US</a></li>
+            <li><a href="#">HOME</a></li>
+        </ul>
+    </header>
 
+    <section>
+        <div class="wrap">
+            <div class="mytitle">
+                <h1><img src="../static/main_fortune_file/text_icon/today_fortune_icon.png"></h1>
+                <h2><img src="../static/main_fortune_file/text_icon/which_one_icon.png"></h2>
+            </div>
 
-    </div>
+            <div class="rtans">
+                <div class="rtan1">
+                    <p>별자리 운세</p>
+                    <div class="nickname">닉네임 <input type="text" style="height:25px; width: 120px; font-size : 15px;"></div>
+                    <span class="start">
+                        <a href="/fortune"><img src="../static/main_fortune_file/button/start_btn.png"></a>
+                        </span>
+                </div>
 
-    <div class="rtans">
-        <a class="rtan1" class="name"><br><br><br>별자리 운세<br><br>
-            <span class="nickname">닉네임 <input type="text" style="height: 25px; font-size:15px;"></span>
-            <br><br>
-            <span class="start">
-            <img src="../static/botton/start_btn.png">
-            </span>
-        </a>
-        <a class="rtan2"><br><br><br>띠별 운세<br><br>
-         <span class="nickname">닉네임 <input type="text" style="height: 25px; font-size:15px;"></span>
-            <br><br>
-            <span class="start">
-            <img src="../static/botton/start_btn.png">
-            </span>
+                <div class="rtan2">
+                    <p>띠별 운세</p>
+                    <div class="nickname">닉네임 <input type="text" style="height: 25px; width: 120px; font-size:15px;"></div>
+                    <span class="start">
+                        <a href="#"><img src="../static/main_fortune_file/button/start_btn.png"></a>
+                        </span>
+                </div>
 
-        </a>
-        <a class="rtan3"><br><br><br>꿈 해몽<br><br>
-         <span class="nickname">닉네임 <input type="text" style="height: 25px; font-size:15px;"></span>
-            <br><br>
-            <span class="start">
-            <img src="../static/botton/start_btn.png">
-            </span>
-        </a>
-        <a class="rtan4"><br><br><br>랜덤 운세<br><br>
-         <span class="nickname">닉네임 <input type="text" style="height: 25px; font-size:15px;"></span>
-            <br><br>
-            <span class="start">
-            <img src="../static/botton/start_btn.png">
-            </span>
-        </a>
+                <div class="rtan3">
+                    <p>꿈 해몽</p>
+                    <div class="nickname">닉네임 <input type="text" style="height: 25px; width: 120px; font-size:15px;"></div>
+                    <span class="start">
+                        <a href="#"><img src="../static/main_fortune_file/button/start_btn.png"></a>
+                        </span>
+                </div>
+                <div class="rtan4">
+                    <P>랜덤 운세</P>
+                    <div class="nickname">닉네임 <input type="text" style="height: 25px; width: 120px;  font-size:15px;"></div>
+                    <span class="start">
+                        <a href="#"><img src="../static/main_fortune_file/button/start_btn.png"></a>
+                        </span>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    </div>
 </body>
 
 </html>

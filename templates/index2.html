@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="shortcut icon" href="https://new-year.spartacodingclub.kr/images/favicon.png">
+    <meta property="og:title" content="" />
+    <meta property="og:description" content="2021년 띠 별 운세를 알려드립니다" />
+    <meta property="og:image" content="background-image.jpeg" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2021년 신년운세!</title>
+
+    <script type="text/javascript" src="https://new-year.spartacodingclub.kr/newyear.js"></script>
+    <style>
+         @font-face {
+            font-family: 'CookieRunOTF-Bold';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/CookieRunOTF-Bold00.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+         *{
+            font-family: 'CookieRunOTF-Bold';
+            font-weight: normal;
+            font-style: normal;
+            margin: 0;
+            padding: 0;
+        }
+         ul{list-style: none;}
+        a{text-decoration: none;}
+        body{
+            width: 1200px;
+            height: 1800px;
+            margin: 0 auto;
+        }
+        /*header*/
+        #header{
+            width: 100%; height: 130px;
+            background: #fff;
+            position: relative;
+            overflow: hidden;
+            text-align: center;
+        }
+        #logo{
+            width: 180px; height: 100px;
+            margin: 0 auto;
+            position: relative;
+            overflow: hidden;
+            text-align: center;
+        }
+        #logo>a>img{
+            width: 160px; height: 90px;
+            padding-top: 10px;
+        }
+        #header>ul>li{
+            float: right;
+            position: relative;
+            margin-left: 40px;
+            font-size: 20px;
+        }
+        #header>ul>li>a{
+            display: block;
+            padding-left: 20px;
+            padding-right: 20px;
+            color: #000;
+        }
+
+        /*section*/
+         .content1{
+             width: 1200px;
+             height: 225px;
+             background: #fff url("../static/main_fortune_file/image/background-image.jpeg") no-repeat;
+             background-size: 100%;
+             opacity: 80%;
+         }
+         .content1 .text1{
+             width: 360px; height: 225px;
+             background: url("../static/star_fortune_file/star_images/text_icon/star_fortune_icon.png") no-repeat;
+             background-position: 0,10px;
+             display: block;
+             margin: 0px 430px;
+
+         }
+         .content2{
+             width: 1200px; height: 1455px;
+             background: #fff;
+             overflow: hidden;
+         }
+         .text2{
+             font-size: 36px;
+             padding: 40px 50px;
+         }
+         .content2 .wrap{
+             width: 1000px;
+             height: 1300px;
+             padding: 50px 20px 20px 100px;
+             margin: 0 auto;
+         }
+         .content2 .image>li{
+            float: left;
+         }
+         .image>.box1{
+            width: 330px; height: 180px;
+             background: #fff;
+         }
+         .box1>p{
+             text-align: center;
+             font-size: 30px;
+         }
+         .box1>a>img{
+             margin-left: 125px;
+             margin-top: 10px;
+
+         }
+    </style>
+</head>
+<body>
+    <header id="header">
+        <div id="logo"><a href="index.html"><img src="../static/main_fortune_file/logo/logo.png" alt="logo"></a></div>
+        <ul class="navbar_menu">
+            <li><a href="#" onclick="location.href='aboutus.html'">ABOUT US</a></li>
+            <li><a href="#" onclick="location.href='index.html'">HOME</a></li>
+        </ul>
+    </header>
+
+    <section>
+        <div class="content1">
+            <div class="text1"></div>
+        </div>
+        <div class="content2">
+            <p class="text2">_____님의 별자리를 선택해주세요.</p>
+            <div class="wrap">
+                <ul class="image">
+                    <li><a href="#"><img src="../static/star_fortune_file/star_images/star_icon/no1.png" alt="물병자리" width="160"></a></li>
+                    <li class="box1">
+                        <p>물병자리 <br> (1/20 ~ 2/18)</p>
+                        <a href="/fortune2"><img src="../static/main_fortune_file/button/btn.png" alt="확인"></a>
+                    </li>
+                    <li><a href="#"><img src="../static/star_fortune_file/star_images/star_icon/no2.png" alt="물고기" width="160"></a></li>
+                    <li class="box1">
+                        <p>물고기자리 <br> (2/19 ~ 3/20)</p>
+                        <a href="/fortune2"><img src="../static/main_fortune_file/button/btn.png" alt="확인"></a>
+                    </li>
+                    <li><a href="#"><img src="../static/star_fortune_file/star_images/star_icon/no3.png" alt="양자리" width="160"></a></li>
+                    <li class="box1">
+                        <p>양자리 <br> (3/21 ~ 4/19)</p>
+                        <a href="/fortune2" ><img src="../static/main_fortune_file/button/btn.png" alt="확인"></a>
+                    </li>
+                    <li><a href="#"><img src="../static/star_fortune_file/star_images/star_icon/no4.png" alt="황소자리" width="160"></a></li>
+                    <li class="box1">
+                        <p>황소자리 <br> (4/20 ~ 5/20)</p>
+                        <a href="/fortune2" ><img src="../static/main_fortune_file/button/btn.png" alt="확인"></a>
+                    </li>
+                    <li><a href="#"><img src="../static/star_fortune_file/star_images/star_icon/no5.png" alt="쌍둥이자리" width="160"></a></li>
+                    <li class="box1">
+                        <p>쌍둥이자리 <br> (5/21 ~ 6/21)</p>
+                        <a href="/fortune2" ><img src="../static/main_fortune_file/button/btn.png" alt="확인"></a>
+                    </li>
+                    <li><a href="#"><img src="../static/star_fortune_file/star_images/star_icon/no6.png" alt="게자리" width="160"></a></li>
+                    <li class="box1">
+                        <p>게자리 <br> (6/22 ~ 7/22)</p>
+                        <a href="/fortune2" ><img src="../static/main_fortune_file/button/btn.png" alt="확인"></a>
+                    </li>
+                    <li><a href="#"><img src="../static/star_fortune_file/star_images/star_icon/no7.png" alt="사자자리" width="160"></a></li>
+                    <li class="box1">
+                        <p>사자자리 <br> (7/23 ~ 8/22)</p>
+                        <a href="/fortune2"><img src="../static/main_fortune_file/button/btn.png" alt="확인"></a>
+                    </li>
+                    <li><a href="#"><img src="../static/star_fortune_file/star_images/star_icon/no8.png" alt="처녀자리" width="160"></a></li>
+                    <li class="box1">
+                        <p>처녀자리 <br> (8/23 ~ 9/23)</p>
+                        <a href="/fortune2"><img src="../static/main_fortune_file/button/btn.png" alt="확인"></a>
+                    </li>
+                    <li><a href="#"><img src="../static/star_fortune_file/star_images/star_icon/no9.png" alt="천칭자리" width="160"></a></li>
+                    <li class="box1">
+                        <p>천칭자리 <br> (9/24 ~ 10/22)</p>
+                        <a href="/fortune2"><img src="../static/main_fortune_file/button/btn.png" alt="확인"></a>
+                    </li>
+                    <li><a href="#"><img src="../static/star_fortune_file/star_images/star_icon/no10.png" alt="전갈자리" width="160"></a></li>
+                    <li class="box1">
+                        <p>전갈자리 <br> (10/23 ~ 11/22)</p>
+                        <a href="/fortune2"><img src="../static/main_fortune_file/button/btn.png" alt="확인"></a>
+                    </li>
+                    <li><a href="#"><img src="../static/star_fortune_file/star_images/star_icon/no11.png" alt="사수자리" width="160"></a></li>
+                    <li class="box1">
+                        <p>사수자리 <br> (11/23 ~ 12/24)</p>
+                        <a href="/fortune2"><img src="../static/main_fortune_file/button/btn.png" alt="확인"></a>
+                    </li>
+                    <li><a href="#"><img src="../static/star_fortune_file/star_images/star_icon/no12.png" alt="염소자리" width="160"></a></li>
+                    <li class="box1">
+                        <p>염소자리 <br> (12/25 ~ 1/19)</p>
+                        <a href="/fortune2"><img src="../static/main_fortune_file/button/btn.png" alt="확인"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
