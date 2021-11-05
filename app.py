@@ -10,8 +10,34 @@ db = client.dbsparta
 
 # HTML 화면 보여주기
 @app.route('/')
-def home():
+def show_main():
     return render_template('index.html')
+
+@app.route('/fortune')
+def show_con():
+    return render_template('index2.html')
+
+@app.route('/fortune2')
+def show_con2():
+    return render_template('index3.html')
+
+@app.route('/special')
+def special_thanks():
+    return render_template('aboutus.html')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 # API 역할을 하는 부분
