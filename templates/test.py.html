@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css"/>
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <title>2021년 신년운세!</title>
+
+    <script type="text/javascript" src="https://new-year.spartacodingclub.kr/newyear.js"></script>
+    <style>
+        @font-face {
+            font-family: 'Cafe24Ssurround';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24Ssurround.woff') format('woff');
+
+        }
+
+        .mytitle {
+            color: lavenderblush;
+            text-align: center;
+            margin-top: 0px;
+            margin-bottom: 3px;
+
+        }
+
+        .mytitle > h1 {
+            font-size: 80px;
+            margin-bottom: 10px;
+
+        }
+
+        .mytitle > h2 {
+            font-size: 23px;
+            position: absolute;
+            margin-left: 770px;
+            color: black;
+
+        }
+
+        .mytitle > a {
+            font-size: 50px;
+            border-radius: 20px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            padding-left: 30px;
+            padding-right: 30px;
+            background-color: #30799B;
+            background-color: rgba(255, 255, 255, 0.18);
+
+        }
+
+        body {
+            background-image: url("../static/main_fortune_file/image/background-image.jpeg");
+
+            background-size: 2150px;
+            background-color: rgba(255, 255, 255, 80);
+
+        {
+            #background-color: ivory
+        ;
+            #
+        }
+        background-position: center
+
+        ;
+        background-repeat: no-repeat
+
+        ;
+
+        }
+
+        * {
+            font-family: 'Cafe24Ssurround';
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        .rtans > a {
+
+            display: block;
+            width: 350px;
+            height: 550px;
+            border: solid 5px #30799B;
+            background-color: white;
+            border-radius: 60px;
+            box-shadow: 0px 0px 10px 0px #30799B;
+            margin: 65px;
+            background-size: cover;
+            background-position: center;
+            color: black;
+            text-align: center;
+            font-size: 50px;
+            text-decoration-line: none;
+        }
+
+        .back {
+            position: absolute;
+            background-color: darkgrey;
+            top: 200px;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            transition: all 0.5s;
+
+
+        }
+
+        .textbox {
+            margin-top: 80px;
+            margin-left: 700px;
+            position: absolute;
+            border: 1px solid black;
+            padding: 270px;
+            height: 10px;
+            width: 180px;
+            border-radius: 20px;
+            border: solid 3.5px black;
+            background-color: white;
+        }
+
+        .another {
+            position: absolute;
+            font-size: 23px;
+            margin-left: 750px;
+            margin-top: 670px;
+
+        }
+
+        .sign {
+            position: absolute;
+            margin-left: 750px;
+            margin-top: 730px;
+        }
+
+        .dream {
+            position: absolute;
+            margin-left: 990px;
+            margin-top: 730px;
+        }
+
+        .random {
+            position: absolute;
+            margin-left: 1245px;
+            margin-top: 730px;
+        }
+    </style>
+    <script>
+        $(document).ready(function () {
+            likeStar();
+        });
+
+        function likeStar() {
+            $.ajax({
+                type: 'GET',
+                url: '/api/list',
+                data: {},
+                success: function (response) {
+                    let stars = response['cons_fortune']
+                    for (let i = 0; i < stars.length; i++) {
+                        let name = stars[i]['title']
+                        let star = stars[i]['today_text']
+                        let area = stars[i]['지역']
+                        let image = stars[i]['이미지']
+                        let temp_html = `<div class="card-body">
+                                            <h5 class="card-title">${name}</h5>
+                                            <p class="card-text">${star}</p>
+                                            <p class="card-text">${star}</p>
+                                            <p class="card-text">${star}</p>
+                                        </div>`
+
+                        $('#asd').append(temp_html)
+
+                    }
+
+                }
+            });
+        }
+    </script>
+
+</head>
+
+<body>
+
+<div class="card border-light mb-3" id="asd" style="max-width: 18rem;">
+    <div class="card-header">Header</div>
+
+    <div class="wrap">
+        <div class="row" id="star-box"></div>
+    </div>
+</div>
+
+
+</body>
+
+</html>
