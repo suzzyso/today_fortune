@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c1258f03-6981-46b0-8448-85dc8c965331" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/today_fortune/templates/index3.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/today_fortune" beforeDir="false" afterPath="$PROJECT_DIR$/today_fortune" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/today_fortune/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/today_fortune/templates/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/today_fortune/templates/index2.html" beforeDir="false" afterPath="$PROJECT_DIR$/today_fortune/templates/index2.html" afterDir="false" />
     </list>
@@ -28,11 +28,16 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/today_fortune/templates" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\susie\Desktop\sparta1\today_fortune\templates" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -44,11 +49,23 @@
       <updated>1636125863708</updated>
       <workItem from="1636125864940" duration="14000" />
       <workItem from="1636126035797" duration="338000" />
-      <workItem from="1636126413323" duration="1281000" />
+      <workItem from="1636126413323" duration="1355000" />
+      <workItem from="1636185515888" duration="1156000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
